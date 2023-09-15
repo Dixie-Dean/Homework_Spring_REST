@@ -23,7 +23,7 @@ public class AuthorizationService {
         }
         List<Authorities> userAuthorities = userRepository.getUserAuthorities(user.getUser(), user.getPassword());
         if (isEmpty(userAuthorities)) {
-            throw new UnauthorizedUser("Unknown user " + user);
+            throw new UnauthorizedUser("Unknown user " + user.getUser());
         }
         return userAuthorities;
     }

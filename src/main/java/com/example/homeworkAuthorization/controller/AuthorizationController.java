@@ -19,7 +19,6 @@ public class AuthorizationController {
 
     @GetMapping("/authorize")
     public List<Authorities> getAuthorities(@Valid User user) {
-
         return authorizationService.getAuthorities(user);
     }
 }

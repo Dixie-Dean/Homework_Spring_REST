@@ -17,7 +17,7 @@ public class UserHandlerMethodArgumentResolver implements HandlerMethodArgumentR
     public Object resolveArgument(MethodParameter parameter,
                                   ModelAndViewContainer mavContainer,
                                   NativeWebRequest webRequest,
-                                  WebDataBinderFactory binderFactory) throws Exception {
+                                  WebDataBinderFactory binderFactory) {
         String user = webRequest.getParameter("user");
         String password = webRequest.getParameter("password");
         return new User(user, password);
