@@ -4,9 +4,11 @@ import com.example.homeworkAuthorization.authorities.Authorities;
 import com.example.homeworkAuthorization.exceptions.InvalidCredentials;
 import com.example.homeworkAuthorization.exceptions.UnauthorizedUser;
 import com.example.homeworkAuthorization.repository.UserRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class AuthorizationService {
     UserRepository userRepository;
 
