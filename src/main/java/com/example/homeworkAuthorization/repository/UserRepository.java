@@ -12,11 +12,7 @@ public class UserRepository {
 
     public List<Authorities> getUserAuthorities(String user, String password) {
         if (users.containsKey(user) && users.containsValue(password)) {
-            List<Authorities> authorities = new ArrayList<>();
-            authorities.add(Authorities.READ);
-            authorities.add(Authorities.WRITE);
-            authorities.add(Authorities.DELETE);
-            return authorities;
+            return List.of(Authorities.READ, Authorities.WRITE, Authorities.DELETE);
         } else {
             return Collections.emptyList();
         }
