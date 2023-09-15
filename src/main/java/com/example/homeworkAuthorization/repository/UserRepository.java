@@ -7,7 +7,6 @@ import java.util.*;
 
 @Repository
 public class UserRepository {
-
     private final Map<String, String> users = new HashMap<>();
 
     public List<Authorities> getUserAuthorities(String user, String password) {
