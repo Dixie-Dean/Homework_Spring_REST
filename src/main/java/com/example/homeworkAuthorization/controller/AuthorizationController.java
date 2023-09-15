@@ -5,9 +5,7 @@ import com.example.homeworkAuthorization.service.AuthorizationService;
 import com.example.homeworkAuthorization.user.User;
 import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.method.support.HandlerMethodArgumentResolverComposite;
 
 import java.util.List;
 
