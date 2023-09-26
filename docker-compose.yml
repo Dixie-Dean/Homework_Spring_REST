@@ -1,0 +1,8 @@
+version: '1.1'
+services:
+  authorization:
+    image: 'authorization:1.0'
+    ports:
+      - 8080:8080
+    build:
+      ./
